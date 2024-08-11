@@ -1,0 +1,33 @@
+.card-transition-enter {
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+.card-transition-enter-active {
+  max-height: 500px; /* Adjust based on content */
+  opacity: 1;
+}
+
+.card-transition-exit {
+  max-height: 500px; /* Adjust based on content */
+  opacity: 1;
+  transition: max-height 0.3s ease-in, opacity 0.3s ease-in;
+}
+
+.card-transition-exit-active {
+  max-height: 0;
+  opacity: 0;
+}
+
+
+.custom-scroll{
+  -ms-overflow-style: none;
+  /* overflow: auto; */
+  scrollbar-width: none;
+  /* background-color: blue; */
+
+}
+.custom-scroll::-webkit-scrollbar {
+  display: none;
+}
